@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsl(217deg, 54%, 11%);
+  color: hsl(215deg, 51%, 70%);
+}
+
+.card {
+  width: 350px;
+  background: hsl(216deg, 50%, 16%);
+  padding: 30px;
+  border-radius: 10px;
+}
+.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card__banner {
+  position: relative;
+}
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  height: 99%;
+  width: 100%;
+  background: hsl(178deg, 100%, 50%);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.card .overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .overlay:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card__title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.card__description {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.card .priceAndDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card .priceAndDate img {
+  margin-right: 10px;
+}
+.card .price {
+  color: hsl(178deg, 100%, 50%);
+}
+.card .author {
+  display: flex;
+  align-items: center;
+  word-spacing: 5px;
+}
+.card .author img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.card span, .card__title {
+  color: hsl(0deg, 0%, 100%);
+}
+.card span:hover, .card__title:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+.card span {
+  margin-left: 2px;
+}/*# sourceMappingURL=styles.css.map */
